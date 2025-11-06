@@ -1,14 +1,29 @@
+type Id = number;
+type EventDetailsWithoutIds = {
+    date: string; // in ISO format
+    title: string;
+    image_url?: string;
+    description?: string;
+};
 interface HasId {
     id: Id; // declare this type!
 }
 
 interface User extends HasId {
     // complete me!
+    username: string;
+    name: string;
+    email?: string;
 };
 
 
 interface Event extends HasId {
     // complete me!
+    host_id: Id;
+    date: Date;
+    title: string;
+    image_url?: string;
+    description?: string;
 }
 
 
