@@ -1,10 +1,5 @@
 type Id = number;
-type EventDetailsWithoutIds = {
-    date: string; // in ISO format
-    title: string;
-    image_url?: string;
-    description?: string;
-};
+type EventDetailsWithoutIds = Omit<Event, 'id' | 'host_id'>;
 interface HasId {
     id: Id; // declare this type!
 }

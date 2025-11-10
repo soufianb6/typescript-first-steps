@@ -7,7 +7,7 @@
   "type": "module",
   "main": "compileMe.js",
   "scripts": {
-    "test": "tsc --noEmit & vitest",
+    "test": "tsc --noEmit && vitest",
     "compile": "tsc"
   },
   "devDependencies": {
